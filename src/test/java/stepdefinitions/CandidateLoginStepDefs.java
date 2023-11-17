@@ -110,9 +110,9 @@ public class CandidateLoginStepDefs {
 //        6.Path
         Map<String, Object> actualDataMap = response.as(HashMap.class);
         assertEquals(expectedData.getStatus(), actualDataMap.get("status"));
-        assertEquals(expectedData.getResult().getUserId(), ((Map)actualDataMap.get("result")).get("userId"));
-        assertEquals(expectedData.getUserInfo().getEmail(), ((Map)actualDataMap.get("userInfo")).get("email"));
-        assertEquals(expectedData.getUserInfo().getFirstName(), ((Map)actualDataMap.get("userInfo")).get("firstName"));
+        assertEquals(expectedData.getResult().getUserId(), ((Map) actualDataMap.get("result")).get("userId"));
+        assertEquals(expectedData.getUserInfo().getEmail(), ((Map) actualDataMap.get("userInfo")).get("email"));
+        assertEquals(expectedData.getUserInfo().getFirstName(), ((Map) actualDataMap.get("userInfo")).get("firstName"));
 
 
     }
